@@ -1,11 +1,11 @@
 {
-    "name": "ghostwriter/wip",
-    "description": "Here be dragons",
+    "name": "ghostwriter/inflector",
+    "description": "Convert words between singular and plural forms in PHP.",
     "license": "BSD-4-Clause",
     "type": "library",
     "keywords": [
         "ghostwriter",
-        "wip"
+        "inflector"
     ],
     "authors": [
         {
@@ -15,12 +15,13 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/ghostwriter/wip",
+    "homepage": "https://github.com/ghostwriter/inflector",
     "support": {
-        "issues": "https://github.com/ghostwriter/wip/issues",
-        "source": "https://github.com/ghostwriter/wip",
-        "rss": "https://github.com/ghostwriter/wip/releases.atom",
-        "security": "https://github.com/ghostwriter/wip/security/advisories/new"
+        "issues": "https://github.com/ghostwriter/inflector/issues",
+        "source": "https://github.com/ghostwriter/inflector",
+        "docs": "https://github.com/ghostwriter/inflector",
+        "rss": "https://github.com/ghostwriter/inflector/releases.atom",
+        "security": "https://github.com/ghostwriter/inflector/security/advisories/new"
     },
     "funding": [
         {
@@ -34,35 +35,19 @@
         "#StandWithUkraine"
     ],
     "require": {
-        "php": "^8.4",
-        "ghostwriter/case-converter": "^2.0.0 || ~2.1.0",
-        "ghostwriter/clock": "~3.0.1",
-        "ghostwriter/collection": "~2.0.0",
-        "ghostwriter/config": "~1.0.0",
-        "ghostwriter/container": "~5.0.1",
-        "ghostwriter/event-dispatcher": "~5.0.3",
-        "ghostwriter/filesystem": "~0.1.1",
-        "ghostwriter/http": "@dev",
-        "ghostwriter/json": "~3.0.0",
-        "ghostwriter/option": "~2.0.0",
-        "ghostwriter/result": "~2.0.0",
-        "ghostwriter/shell": "~0.1.0",
-        "ghostwriter/uuid": "~1.0.3"
+        "php": "^8.3",
+        "ghostwriter/case-converter": "~2.1.0"
     },
     "require-dev": {
         "ghostwriter/coding-standard": "dev-main",
-        "ghostwriter/psr-phpunit-assertions": "@dev"
+        "ghostwriter/container": "~5.0.1"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Ghostwriter\\Wip\\": "src"
-        },
-        "files": [
-            "src/constants.php",
-            "src/functions.php"
-        ]
+            "Ghostwriter\\Inflector\\": "src"
+        }
     },
     "autoload-dev": {
         "psr-4": {
@@ -75,10 +60,6 @@
             "tests/Fixture/"
         ]
     },
-    "bin": [
-        "bin/console",
-        "bin/console.php"
-    ],
     "config": {
         "allow-plugins": {
             "ghostwriter/coding-standard": true
