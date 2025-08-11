@@ -3,7 +3,6 @@
   "description": "[WIP] Convert words between singular and plural forms in PHP"
   "homepage": "https://github.com/ghostwriter/inflector"
   "topics": "ghostwriter, inflector"
-  "private": false
   "has_issues": true
   "has_projects": false
   "has_wiki": false
