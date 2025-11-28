@@ -98,8 +98,8 @@
     },
     "extra": {
         "thanks": {
-            "url": "https://github.com/ghostwriter/inflector",
-            "name": "ghostwriter/inflector"
+            "name": "ghostwriter/inflector",
+            "url": "https://github.com/ghostwriter/inflector"
         }
     }
 }
