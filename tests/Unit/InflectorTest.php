@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Tests\Unit;
 
 use Generator;
-use Ghostwriter\Wip\Foo;
-use Ghostwriter\Wip\Interface\FooInterface;
+use Ghostwriter\Inflector\Inflector;
+use Ghostwriter\Inflector\Interface\InflectorInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
@@ -14,32 +14,26 @@ use Throwable;
 
 use function is_a;
 
-#[CoversClass(Foo::class)]
-final class FooTest extends TestCase
+#[CoversClass(Inflector::class)]
+final class InflectorTest extends TestCase
 {
-    /**
-     * @throws Throwable
-     */
-    #[DataProvider('dataProvider')]
+    /** @throws Throwable */
+    #[DataProvider('provideExampleCases')]
     public function testExample(bool $value): void
     {
         self::assertSame($value, $value);
 
-        self::assertTrue(Foo::new()->test());
+        self::assertTrue(Inflector::new()->test());
     }
 
-    /**
-     * @throws Throwable
-     */
+    /** @throws Throwable */
     public function testImplementsInterface(): void
     {
-        self::assertTrue(is_a(Foo::class, FooInterface::class, true));
+        self::assertTrue(is_a(Inflector::class, InflectorInterface::class, true));
     }
 
-    /**
-     * @return Generator<array{bool}>
-     */
-    public static function dataProvider(): Generator
+    /** @return Generator<array{bool}> */
+    public static function provideExampleCases(): iterable
     {
         yield from [
             'true' => [true],

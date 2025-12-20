@@ -1,3 +1,3 @@
-# WIP
+# Inflector
 
 here be dragons...

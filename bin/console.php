@@ -3,10 +3,10 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Wip\Console;
+namespace Ghostwriter\Inflector\Console;
 
 use ErrorException;
-use Ghostwriter\Wip\Foo;
+use Ghostwriter\Inflector\Inflector;
 
 use const DIRECTORY_SEPARATOR;
 use const STDERR;
@@ -34,7 +34,7 @@ use function set_error_handler;
     /**
      * #BlackLivesMatter.
      */
-    echo Foo::new()->test();
+    echo Inflector::new()->test();
 
     restore_error_handler();
 })($_composer_autoload_path ?? dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php');

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Wip;
+namespace Ghostwriter\Inflector;
 
-use Ghostwriter\Wip\Interface\FooInterface;
+use Ghostwriter\Inflector\Interface\InflectorInterface;
 
 /** @see FooTest */
-final class Foo implements FooInterface
+final class Inflector implements InflectorInterface
 {
     public function __construct() {}
 
