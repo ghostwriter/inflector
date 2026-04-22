@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46458345fcbdb99b6d0ef8e56b11527a",
+    "content-hash": "2ff998e18f5631abebe40e574142fb66",
     "packages": [
         {
             "name": "ghostwriter/case-converter",
@@ -226,16 +226,16 @@
         },
         {
             "name": "ghostwriter/container",
-            "version": "6.1.0",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/container.git",
-                "reference": "05aa763090b7dddc79d152b94852fbce73775d01"
+                "reference": "1931a1175deb24d0e5901a689054be8227144b3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/container/zipball/05aa763090b7dddc79d152b94852fbce73775d01",
-                "reference": "05aa763090b7dddc79d152b94852fbce73775d01",
+                "url": "https://api.github.com/repos/ghostwriter/container/zipball/1931a1175deb24d0e5901a689054be8227144b3d",
+                "reference": "1931a1175deb24d0e5901a689054be8227144b3d",
                 "shasum": ""
             },
             "require": {
@@ -249,7 +249,7 @@
                 "ext-xdebug": "*",
                 "ghostwriter/coding-standard": "dev-main",
                 "mockery/mockery": "^1.6.12",
-                "phpunit/phpunit": "^13.1.3",
+                "phpunit/phpunit": "^13.1.7",
                 "symfony/var-dumper": "^8.0.8"
             },
             "type": "library",
@@ -301,7 +301,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-13T19:15:02+00:00"
+            "time": "2026-04-20T15:01:26+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
