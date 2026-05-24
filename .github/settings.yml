@@ -8,7 +8,6 @@
 "repository":
   "name": "inflector"
   "description": "[WIP] Convert words between singular and plural forms in PHP"
-  "topics": "ghostwriter, inflector, php"
   "homepage": "https://github.com/ghostwriter/inflector"
   "default_branch": "0.1.x"
   "allow_auto_merge": true
