@@ -59,17 +59,6 @@
             "Ghostwriter\\Inflector\\": "src/"
         }
     },
-    "extra": {
-        "ghostwriter": {
-            "container": {
-                "provider": ["Ghostwriter\\Inflector\\Container\\InflectorProvider"]
-            }
-        },
-        "thanks": {
-            "name": "ghostwriter/inflector",
-            "url": "https://github.com/ghostwriter/inflector"
-        }
-    },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
@@ -116,6 +105,19 @@
         "sort-packages": true,
         "strict-psr-autoloader": true,
         "use-parent-dir": false
+    },
+    "extra": {
+        "ghostwriter": {
+            "container": {
+                "provider": [
+                    "Ghostwriter\\Inflector\\Container\\InflectorProvider"
+                ]
+            }
+        },
+        "thanks": {
+            "name": "ghostwriter/inflector",
+            "url": "https://github.com/ghostwriter/inflector"
+        }
     },
     "scripts": {
         "cache:clear": "rm -rf ./.cache/*",
